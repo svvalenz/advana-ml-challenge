@@ -1,22 +1,53 @@
-.venv/
-**/__pycache__/
-*.pkl
-*.pickle
-*.png
-**/dist/
-**/*.egg-info/
-**/.DS_Store/
-**/*.pyc
-*.conf
+# Virtual Environment
+venv/
+env/
+ENV/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
 build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
 .DS_Store
-test-results
-**/.ipynb_checkpoints
-*.json
-.coverage
-.coveragerc
-secrets/
-.vscode
-.pytest_cache
-insecure_report.txt
-reports
+Thumbs.db
+
+# Logs
+*.log
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Temporary files
+*.tmp
+*.temp
