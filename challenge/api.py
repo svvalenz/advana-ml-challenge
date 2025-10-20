@@ -63,6 +63,17 @@ VALID_AIRLINES = {
     "Sky Airline", "United Airlines"
 }
 
+@app.get("/", status_code=200)
+async def get_root() -> dict:
+    return {
+        "message": "Advana ML Challenge API",
+        "version": "1.0.0",
+        "endpoints": {
+            "health": "/health",
+            "predict": "/predict"
+        }
+    }
+
 @app.get("/health", status_code=200)
 async def get_health() -> dict:
     return {
